@@ -13,9 +13,6 @@
 		<maven>2.2.1</maven>
 	</prerequisites>
 
-	<scm>
-		<connection>scm:git:https://rajexbigdata.visualstudio.com/DefaultCollection/_git/springbatchdemo</connection>
-	</scm>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -143,6 +140,14 @@
 					</archive>
 				</configuration>
 			</plugin>
+			<plugin>
+            	<groupId>com.atlassian.maven.plugins</groupId>
+            	<artifactId>maven-jgitflow-plugin</artifactId>
+            	<version>1.0-alpha14</version>
+            	<configuration>
+                	<!-- see goals wiki page for configuration options -->
+            	</configuration>
+        </plugin>			
 		</plugins>
 	</build>
 
