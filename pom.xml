@@ -144,7 +144,7 @@
             	<artifactId>maven-jgitflow-plugin</artifactId>
             	<version>1.0-alpha14</version>
             	<configuration>
-                	<!-- see goals wiki page for configuration options -->
+                	<!-- see goals wiki page for configuration options https://bitbucket.org/atlassian/maven-jgitflow-plugin/wiki/goals.wiki#!goals-overview -->
             	</configuration>
         </plugin>			
 		</plugins>
