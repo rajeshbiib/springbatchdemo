@@ -1,6 +1,11 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<parent>
+		<groupId>com.biogenidec.datasciences</groupId>
+		<artifactId>parentproject</artifactId>
+		<version>0.0.2</version>
+	</parent>
+
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>com.biogenidec.datasciences</groupId>
 	<artifactId>springbatchdemo</artifactId>
 	<version>0.0.3</version>
 	<packaging>jar</packaging>
@@ -8,30 +13,10 @@
 	<name>Spring Batch Demo</name>
 	<description>Demonstration of running a batch project on HPC</description>
 
-	<prerequisites>
-		<maven>2.2.1</maven>
-	</prerequisites>
-
-
 	<properties>
-		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<spring.framework.version>3.0.6.RELEASE</spring.framework.version>
 		<spring.batch.version>2.1.7.RELEASE</spring.batch.version>
 	</properties>
-
-	<distributionManagement>
-		<repository>
-			<id>deployment</id>
-			<name>Internal Releases</name>
-			<url>http://rditsccvmp01:8081/nexus/content/repositories/releases/</url>
-		</repository>
-		<snapshotRepository>
-			<id>deployment</id>
-			<name>Internal Releases</name>
-			<url>http://rditsccvmp01:8081/nexus/content/repositories/snapshots/</url>
-		</snapshotRepository>
-	</distributionManagement>
-
 
 	<dependencies>
 		<dependency>
@@ -139,16 +124,7 @@
 					</archive>
 				</configuration>
 			</plugin>
-			<plugin>
-            	<groupId>com.atlassian.maven.plugins</groupId>
-            	<artifactId>maven-jgitflow-plugin</artifactId>
-            	<version>1.0-alpha14</version>
-            	<configuration>
-                	<!-- see goals wiki page for configuration options https://bitbucket.org/atlassian/maven-jgitflow-plugin/wiki/goals.wiki#!goals-overview -->
-            	</configuration>
-        </plugin>			
 		</plugins>
 	</build>
-
 
 </project>
